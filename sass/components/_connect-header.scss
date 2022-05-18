@@ -1,0 +1,41 @@
+.connect {
+    display: flex;
+    margin-left: auto;
+}
+
+.connect__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.connect__link {
+    text-decoration: none;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
+
+
+.connect__link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: color var(--hoover-duration) var(--hover-time-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.connect__icon {
+    display: flex;
+    margin-right: 10px;
+    fill: currentColor;
+}

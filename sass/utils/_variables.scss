@@ -1,0 +1,18 @@
+:root {
+    --accent-color: #2196F3;
+    --primary-text-color: #212121;
+    --header-background-color: #FFFFFF;
+    --footer-background: #2F303A;
+    --second-text-color: #757575;
+    --typical-margin: 30px;
+    --icons-color: #AFB1B8;
+    --hoover-duration: 250ms;
+    --hover-time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    background-color: #FFFFFF;
+    position: relative;
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="./index.html" class="logo">
+                Web<span class="logo__black">Studio</span>
+            </a>
+            <nav class="navigation header__navigation">
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a href="./index.html" class="menu-list__link">Студия</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="./portfolio.html" class="menu-list__link menu-list__link--current">Портфолио</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="" class="menu-list__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="connect">
+                <li class="connect__item">
+                    <a href="mailto:info@devstudio.com" class="connect__link">
+                        <svg class="connect__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="connect__item">
+                    <a href="tel:+380961111111" class="connect__link">
+                        <svg class="connect__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main-portfolio">
+        <section class="section">
+            <h1 class="visually-hidden">Виды услуг</h1>
+            <div class="container">
+                <ul class="portfolio-list">
+                    <li class="portfolio-item">
+                        <button type="button" class="portfolio-btn">Все</button>
+                    </li>
+                    <li class="portfolio-item">
+                        <button type="button" class="portfolio-btn">Веб-сайты</button>
+                    </li>
+                    <li class="portfolio-item">
+                        <button type="button" class="portfolio-btn">Приложения</button>
+                    </li>
+                    <li class="portfolio-item">
+                        <button type="button" class="portfolio-btn">Дизайн</button>
+                    </li>
+                    <li class="portfolio-item">
+                        <button type="button" class="portfolio-btn">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="portfolio-galery-list">
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                                <img src="./images/img-website.jpg" alt="Монитор ноутбука с людьми" width="370" height="294" class="galery-img">
+                                <p class="galery-top-text">
+                                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    получить
+                                    исчерпывающие сведения о компании или частном лице.
+                                </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Технокряк</h2>
+                                <p class="galery-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                            <img src="./images/img-design.jpg" alt="Игроки баскетбола с мячем" width="370" height="294" class="galery-img">
+                            <p class="galery-top-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="galery-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                            <img src="./images/img-restorant.jpg" alt="Емблема ресторана" width="370" height="294" class="galery-img">
+                            <p class="galery-top-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Ресторан Seafood</h2>
+                                <p class="galery-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                            <img src="./images/img-headphone.jpg" alt="Навушники" width="370" height="294" class="galery-img">
+                            <p class="galery-top-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Проект Prime</h2>
+                                <p class="galery-text">Маркетинг</p>
+                            </div>
+                        </a>   
+                    </li>
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                            <img src="./images/img-boxes.jpg" alt="Две коробки" width="370" height="294" class="galery-img">
+                            <p class="galery-top-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Проект Boxes</h2>
+                                <p class="galery-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                            <img src="./images/img-net.jpg" alt="Стацыонарный компютер" width="370" height="294" class="galery-img">
+                            <p class="galery-top-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Inspiration has no Borders</h2>
+                                <p class="galery-text">Веб-сайт</p>
+                            </div>
+                        </a> 
+                    </li>
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                            <img src="./images/img-book.jpg" alt="Открытая книга" width="370" height="294" class="galery-img">
+                            <p class="galery-top-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Издание Limited Edition</h2>
+                                <p class="galery-text">Дизайн</p>
+                            </div>
+                        </a>   
+                    </li>
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                            <img src="./images/img-label.jpg" alt="Надпись на верьовке" width="370" height="294" class="galery-img">
+                            <p class="galery-top-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Проект LAB</h2>
+                                <p class="galery-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="galery-item">
+                        <a href="" class="galery-link link">
+                            <div class="galery-top-wrap">
+                            <img src="./images/img-folder.jpg" alt="Открытый ноутбук с програмой" width="370" height="294" class="galery-img">
+                            <p class="galery-top-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                получить
+                                исчерпывающие сведения о компании или частном лице.
+                            </p>
+                            </div>
+                            <div class="cards">
+                                <h2 class="galery-title">Growing Business</h2>
+                                <p class="galery-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>   
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer--flex">
+                <a href="" class="logo footer--logo link">
+                    Web<span class="logo__white">Studio</span>
+                </a>
+                <address class="address address--margin">
+                    <p class="address__street">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="address__list list">
+                        <li class="address__item">
+                            <a href="mailto:info@devstudio.com" class="address__contact">info@devstudio.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a href="tel:+380961111111" class="address__contact">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="acept">
+                <h3 class="title-footer acept__title">присоединяйтесь</h3>
+                <ul class="acept__list list">
+                    <li class="acept__item"><a href="" class="acept__link">
+                            <svg class="acept__icons" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="acept__item"><a href="" class="acept__link">
+                            <svg class="acept__icons" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="acept__item"><a href="" class="acept__link">
+                            <svg class="acept__icons" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class="acept__item"><a href="" class="acept__link">
+                            <svg class="acept__icons" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="submit">
+                <h3 class="title-footer">Подпишитесь на рассылку</h3>
+                <form class="footer-form">
+                    <div class="form-wrap">
+                        <label for="user-email"></label>
+                        <input type="text" name="user-email" placeholder="E-mail" class="input-email">
+                        <button type="submit" class="button-submit">Подписаться
+                            <svg class="submit-btn-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-icon-send" class="button-submit__icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

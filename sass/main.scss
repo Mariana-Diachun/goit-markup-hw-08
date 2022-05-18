@@ -1,0 +1,40 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./utils/hidden";
+@import "./utils/common";
+
+@import "./components/section";
+@import "./components/container";
+
+@import "./layout/header";
+@import "./components/logo";
+@import "./components/menu-header";
+@import "./components/connect-header";
+
+
+@import "./layout/hero";
+@import "./components/btn-hero";
+
+@import "./components/modal";
+
+@import "./layout/preference";
+
+@import "./layout/activity";
+@import "./components/section-title";
+
+@import "./layout/team";
+@import "./components/social-list";
+
+
+@import "./layout/clients";
+
+@import "./layout/portfolio";
+@import "./components/btn-portfolio";
+
+@import "./layout/footer";
+@import "./components/footer-address";
+@import "./components/title-footer";
+@import "./components/footer-form";
+
+
+
