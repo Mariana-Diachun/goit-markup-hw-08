@@ -214,28 +214,46 @@ button {
 
 .hero {
   background-color: #2F303A;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.62;
+  font-size: 26px;
   letter-spacing: 0.06em;
-  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    line-height: 1.36;
+    font-size: 44px;
+    max-width: 700px;
+  }
 }
 
 .hero__btn {
