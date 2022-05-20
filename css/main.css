@@ -68,17 +68,9 @@ button {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -492,6 +484,12 @@ button {
   color: var(--second-text-color);
 }
 
+@media screen and (max-width: 1200px) {
+  .activity {
+    display: none;
+  }
+}
+
 .section--no-pad-top {
   padding-top: 0;
 }
@@ -532,6 +530,11 @@ button {
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
 }
 
 .section--background {
@@ -614,10 +617,6 @@ button {
 
 .social__item + .social__item {
   margin-left: 10px;
-}
-
-.clients__title--margin {
-  margin-bottom: 50px;
 }
 
 .clients {
