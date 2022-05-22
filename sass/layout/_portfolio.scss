@@ -1,29 +1,74 @@
-.portfolio-list {
+.portfolio {
     display: flex;
-    // justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 60px;
+    }
 }
+
+.portfolio-item {
+    margin-bottom: 15px;
+    margin-right: 8px;
+    
+}
+
+// .portfolio-galery-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-left: -30px;
+//     margin-top: -30px;
+// }
 .portfolio-galery-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
     margin-top: -30px;
 }
 
 .galery-item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 90px) / 3);
+    // margin-left: 30px;
+    // margin-top: 30px;
+    width: 100%;
+    // flex-basis: calc((100% - 90px) / 3);
 }
 
 
-.portfolio-item:not(:last-child) {
-    margin-right: 8px;
+// .portfolio-item:not(:last-child) {
+//     margin-right: 8px;
+// }
+
+
+.portfolio-galery-list {
+    display: block;
+    align-items: center;
+    margin-bottom: -30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
 }
+.galery-item {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: calc(100% / 3 - 30px);
+    }
+}
+
 
 .galery-link {
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     transition: box-shadow var(--hoover-duration) var(--hover-time-function);
 
     &:hover,
@@ -79,7 +124,6 @@
 }
 
 .cards {
-    box-sizing: border-box;
     padding: 20px 24px;
 
     background: #FFFFFF;
