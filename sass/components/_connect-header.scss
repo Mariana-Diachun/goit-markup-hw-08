@@ -1,6 +1,7 @@
 .connect {
     display: flex;
     margin-left: auto;
+    display: none;
 }
 
 .connect__item:not(:last-child) {
