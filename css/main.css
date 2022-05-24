@@ -941,7 +941,7 @@ button {
   margin-bottom: 15px;
   margin-right: 8px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .portfolio-item {
     margin-bottom: 0;
   }
