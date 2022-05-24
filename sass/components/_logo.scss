@@ -6,6 +6,9 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    @media screen and (min-width: 1200px) {
+        line-height: 1.19;
+    }
 }
 
 .logo__black {
