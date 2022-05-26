@@ -637,14 +637,14 @@ button {
   justify-content: center;
 }
 
-.contract-text {
+span.contract-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
 @media screen and (min-width: 1200px) {
-  .contract-text {
+  span.contract-text {
     line-height: 1.71;
   }
 }
