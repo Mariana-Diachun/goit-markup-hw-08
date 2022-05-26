@@ -135,23 +135,19 @@ button {
   }
 }
 
-.menu-open-btn {
+.js-open-menu {
   margin-left: auto;
   padding: 0;
   border-bottom: none;
   transition: color var(--hoover-duration) var(--hover-time-function);
 }
-.menu-open-btn:hover, .menu-open-btn:focus {
+.js-open-menu:hover, .js-open-menu:focus {
   color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
-  .menu-open-btn {
+  .js-open-menu {
     display: none;
   }
-}
-
-element.style {
-  background: transparent;
 }
 
 .menu-icon {
@@ -165,7 +161,7 @@ element.style {
   }
 }
 
-.mob-menu {
+.js-menu-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -175,20 +171,25 @@ element.style {
   z-index: 1;
   padding-top: 21px;
   padding-bottom: 48px;
+  transform: translateX(100%);
 }
-.mob-menu .container {
+.js-menu-container .container {
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
-  .mob-menu {
+  .js-menu-container {
     display: none;
   }
 }
 
-.menu-close-btn {
+.js-menu-container.is-open {
+  transform: translateX(0);
+}
+
+.js-close-menu {
   background-color: var(--header-background-color);
   margin-left: auto;
   display: block;
@@ -196,7 +197,7 @@ element.style {
   padding: 0;
   transition: color var(--hoover-duration) var(--hover-time-function);
 }
-.menu-close-btn:hover, .menu-close-btn:focus {
+.js-close-menu:hover, .js-close-menu:focus {
   color: var(--accent-color);
 }
 

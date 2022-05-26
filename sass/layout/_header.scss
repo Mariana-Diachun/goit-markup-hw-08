@@ -22,7 +22,7 @@
     }
 }
 
-.menu-open-btn {
+.js-open-menu {
     margin-left: auto;
     padding: 0;
     border-bottom: none;
@@ -34,9 +34,6 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
-}
-element.style {
-    background: transparent;
 }
 
 
@@ -51,7 +48,7 @@ element.style {
         }
 }
 
-.mob-menu {
+.js-menu-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -70,10 +67,13 @@ element.style {
     @media screen and (min-width: 768px) {
         display: none;
     }
+    transform: translateX(100%);
 }
+.js-menu-container.is-open {
+    transform: translateX(0);
+} 
 
-
-.menu-close-btn {
+.js-close-menu {
     background-color: var(--header-background-color);
     margin-left: auto;
     display: block;
