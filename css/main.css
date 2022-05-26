@@ -490,7 +490,6 @@ element.style {
 }
 
 .modal {
-  overflow-y: scroll;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -507,15 +506,12 @@ element.style {
   .modal {
     width: 450px;
     height: 609px;
-    overflow: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
-    overflow-y: scroll;
-    overflow: none;
   }
 }
 

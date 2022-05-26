@@ -18,11 +18,11 @@
             <a href="./index.html" class="logo">
                 Web<span class="logo__black">Studio</span>
             </a>
-            <button type="button" class="menu-open-btn" style="background-color: white;">
-                <svg class="menu-icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-menu-open"></use>
-                </svg>
-            </button>
+        <button type="button" class="menu-open-btn" style="background-color: white;">
+            <svg class="menu-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+        </button>
             <nav class="navigation header__navigation">
                 <ul class="menu-list">
                     <li class="menu-list__item">
@@ -53,7 +53,7 @@
                 </li>
             </ul>
         </div>
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden">
             <div class="container">
                 <div class="mob-menu-top">
                     <button type="button" class="menu-close-btn">
@@ -127,10 +127,21 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                                <img srcset="./images/img-website.jpg 1x,
-                                ./images/img-website-2x.jpg 2x,
-                                " 
-                                src="./images/img-website.jpg" alt="Монитор ноутбука с людьми" class="galery-img">
+                                <picture>
+                                    <source 
+                                    srcset="./images/project-1-370.jpg 1x, ./images/project-1-740.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/jpeg"> 
+                                    <source 
+                                    srcset="./images/project-1-354.jpg 1x, ./images/project-1-708.jpg 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/jpeg">
+                                    <source 
+                                    srcset="./images/project-1-450.jpg 1x, ./images/project-1-900.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/jpeg">
+                                    <img src="./images/project-1-450.jpg" alt="Ноутбук" class="galery-img">
+                                </picture>
                                 <p class="galery-top-text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
@@ -147,11 +158,13 @@
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
                                 <picture>
-                                    <source srcset="./images/project-1-450.jpg 1x, ./images/project-1-900.jpg 2x" media="(max-width: 767px)">
-                                    <source srcset="./images/project-1-354.jpg 1x, ./images/project-1-708.jpg 2x"
-                                        media="(min-width: 768px) and (max-width: 1199px)">
-                                    <source srcset="./images/project-1-370.jpg 1x, ./images/project-1-740.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/project-1-354.jpg" alt="Игроки баскетбола с мячем" class="galery-img">
+                                    <source srcset="./images/project-2-370.jpg 1x, ./images/project-2-740.jpg 2x" media="(min-width: 1200px)"
+                                        type="image/jpeg">
+                                    <source srcset="./images/project-2-354.jpg 1x, ./images/project-2-708.jpg 2x" media="(min-width: 768px)"
+                                        type="image/jpeg">
+                                    <source srcset="./images/project-2-450.jpg 1x, ./images/project-2-900.jpg 2x" media="(max-width: 767px)"
+                                        type="image/jpeg">
+                                    <img src="./images/project-2-450.jpg" alt="Игроки баскетбола с мячем" class="galery-img">
                                 </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -168,10 +181,15 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                            <img srcset="./images/img-restorant.jpg 1x,
-                                ./images/img-restorant-2x.jpg 2x,
-                                " 
-                            src="./images/img-restorant.jpg" alt="Емблема ресторана" width="370" height="294" class="galery-img">
+                            <picture>
+                                <source srcset="./images/project-3-370.jpg 1x, ./images/project-3-740.jpg 2x" media="(min-width: 1200px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-3-354.jpg 1x, ./images/project-3-708.jpg 2x" media="(min-width: 768px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-3-450.jpg 1x, ./images/project-3-900.jpg 2x" media="(max-width: 767px)"
+                                    type="image/jpeg">
+                                <img src="./images/project-3-450.jpg" alt="Емблема Ресторана" class="galery-img">
+                            </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
@@ -187,11 +205,15 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                            <img 
-                            srcset="./images/img-headphone.jpg 1x,
-                                ./images/img-headphone-2x.jpg 2x,
-                                " 
-                                src="./images/img-headphone.jpg" alt="Навушники" width="370" height="294" class="galery-img">
+                            <picture>
+                                <source srcset="./images/project-4-370.jpg 1x, ./images/project-4-740.jpg 2x" media="(min-width: 1200px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-4-354.jpg 1x, ./images/project-4-708.jpg 2x" media="(min-width: 768px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-4-450.jpg 1x, ./images/project-4-900.jpg 2x" media="(max-width: 767px)"
+                                    type="image/jpeg">
+                                <img src="./images/project-4-450.jpg" alt="Наушники" class="galery-img">
+                            </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
@@ -207,11 +229,15 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                            <img 
-                            srcset="./images/img-boxes.jpg 1x,
-                                ./images/img-boxes-2x.jpg 2x,
-                                "
-                                src="./images/img-boxes.jpg" alt="Две коробки" width="370" height="294" class="galery-img">
+                        <picture>
+                            <source srcset="./images/project-5-370.jpg 1x, ./images/project-5-740.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpeg">
+                            <source srcset="./images/project-5-354.jpg 1x, ./images/project-5-708.jpg 2x" media="(min-width: 768px)"
+                                type="image/jpeg">
+                            <source srcset="./images/project-5-450.jpg 1x, ./images/project-5-900.jpg 2x" media="(max-width: 767px)"
+                                type="image/jpeg">
+                            <img src="./images/project-5-450.jpg" alt="Две коробки" class="galery-img">
+                        </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
@@ -227,11 +253,15 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                            <img 
-                            srcset="./images/img-net.jpg 1x,
-                                ./images/img-net-2x.jpg 2x,
-                                "
-                                src="./images/img-net.jpg" alt="Стацыонарный компютер" width="370" height="294" class="galery-img">
+                            <picture>
+                                <source srcset="./images/project-6-370.jpg 1x, ./images/project-6-740.jpg 2x" media="(min-width: 1200px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-6-354.jpg 1x, ./images/project-6-708.jpg 2x" media="(min-width: 768px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-6-450.jpg 1x, ./images/project-6-900.jpg 2x" media="(max-width: 767px)"
+                                    type="image/jpeg">
+                                <img src="./images/project-6-450.jpg" alt="Веб-сайт компании" class="galery-img">
+                            </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
@@ -247,11 +277,15 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                            <img 
-                            srcset="./images/img-book.jpg 1x,
-                                ./images/img-book-2x.jpg 2x,
-                                "
-                                src="./images/img-book.jpg" alt="Открытая книга" width="370" height="294" class="galery-img">
+                            <picture>
+                                <source srcset="./images/project-7-370.jpg 1x, ./images/project-7-740.jpg 2x" media="(min-width: 1200px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-7-354.jpg 1x, ./images/project-7-708.jpg 2x" media="(min-width: 768px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-7-450.jpg 1x, ./images/project-7-900.jpg 2x" media="(max-width: 767px)"
+                                    type="image/jpeg">
+                                <img src="./images/project-7-450.jpg" alt="Откритая книга" class="galery-img">
+                            </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
@@ -267,11 +301,15 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                            <img 
-                            srcset="./images/img-label.jpg 1x,
-                                ./images/img-label-2x.jpg 2x,
-                                "
-                                src="./images/img-label.jpg" alt="Надпись на верьовке" width="370" height="294" class="galery-img">
+                        <picture>
+                            <source srcset="./images/project-8-370.jpg 1x, ./images/project-8-740.jpg 2x" media="(min-width: 1200px)"
+                                type="image/jpeg">
+                            <source srcset="./images/project-8-354.jpg 1x, ./images/project-8-708.jpg 2x" media="(min-width: 768px)"
+                                type="image/jpeg">
+                            <source srcset="./images/project-8-450.jpg 1x, ./images/project-8-900.jpg 2x" media="(max-width: 767px)"
+                                type="image/jpeg">
+                            <img src="./images/project-8-450.jpg" alt="Лейба" class="galery-img">
+                        </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
@@ -287,11 +325,15 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                            <img 
-                            srcset="./images/img-folder.jpg 1x,
-                                ./images/img-folder-2x.jpg 2x,
-                                "
-                                src="./images/img-folder.jpg" alt="Открытый ноутбук с програмой" width="370" height="294" class="galery-img">
+                            <picture>
+                                <source srcset="./images/project-9-370.jpg 1x, ./images/project-9-740.jpg 2x" media="(min-width: 1200px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-9-354.jpg 1x, ./images/project-9-708.jpg 2x" media="(min-width: 768px)"
+                                    type="image/jpeg">
+                                <source srcset="./images/project-9-450.jpg 1x, ./images/project-9-900.jpg 2x" media="(max-width: 767px)"
+                                    type="image/jpeg">
+                                <img src="./images/project-9-450.jpg" alt="Приложение на ноутбуке" class="galery-img">
+                            </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
@@ -367,6 +409,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 </html>
