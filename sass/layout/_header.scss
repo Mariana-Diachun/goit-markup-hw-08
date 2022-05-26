@@ -35,6 +35,10 @@
         display: none;
     }
 }
+element.style {
+    background: transparent;
+}
+
 
 .menu-icon {
     background-color:var(--header-background-color);

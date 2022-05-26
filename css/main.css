@@ -150,6 +150,10 @@ button {
   }
 }
 
+element.style {
+  background: transparent;
+}
+
 .menu-icon {
   background-color: var(--header-background-color);
   fill: currentColor;

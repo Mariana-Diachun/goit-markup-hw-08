@@ -18,7 +18,7 @@
             <a href="./index.html" class="logo">
                 Web<span class="logo__black">Studio</span>
             </a>
-            <button type="button" class="menu-open-btn">
+            <button type="button" class="menu-open-btn" style="background-color: white;">
                 <svg class="menu-icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-menu-open"></use>
                 </svg>
@@ -29,7 +29,7 @@
                         <a href="./index.html" class="menu-list__link">Студия</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="./portfolio.html" class="menu-list__link menu-list__link--current">Портфолио</a>
+                        <a href="" class="menu-list__link menu-list__link--current">Портфолио</a>
                     </li>
                     <li class="menu-list__item">
                         <a href="" class="menu-list__link">Контакты</a>
@@ -66,7 +66,7 @@
                             <a href="./index.html" class="mob-menu__link">Студия</a>
                         </li>
                         <li class="mob-menu__item">
-                            <a href="./portfolio.html" class="mob-menu__link current">Портфолио</a>
+                            <a href="" class="mob-menu__link current">Портфолио</a>
                         </li>
                         <li class="mob-menu__item">
                             <a href="" class="mob-menu__link">Контакты</a>
@@ -146,11 +146,13 @@
                     <li class="galery-item">
                         <a href="" class="galery-link link">
                             <div class="galery-top-wrap">
-                            <img 
-                            srcset="./images/img-design.jpg 1x,
-                                ./images/img-design-2x.jpg 2x,
-                                " 
-                                src="./images/img-design.jpg" alt="Игроки баскетбола с мячем" width="370" height="294" class="galery-img">
+                                <picture>
+                                    <source srcset="./images/project-1-450.jpg 1x, ./images/project-1-900.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./images/project-1-354.jpg 1x, ./images/project-1-708.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                                    <source srcset="./images/project-1-370.jpg 1x, ./images/project-1-740.jpg 2x" media="(min-width: 1200px)">
+                                    <img src="./images/project-1-354.jpg" alt="Игроки баскетбола с мячем" class="galery-img">
+                                </picture>
                             <p class="galery-top-text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
