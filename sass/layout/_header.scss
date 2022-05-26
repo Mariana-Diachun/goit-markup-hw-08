@@ -25,6 +25,7 @@
 .menu-open-btn {
     margin-left: auto;
     padding: 0;
+    border-bottom: none;
     transition: color var(--hoover-duration) var(--hover-time-function);
     &:hover,
     &:focus {
@@ -41,7 +42,9 @@
 }
 
 .header__navigation {
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
 }
 
 .mob-menu {
@@ -142,6 +145,7 @@
     padding-right: 10px;
     padding-bottom: 0;
 }
+
 // .no-scroll {
 //     overflow: hidden;
 // }

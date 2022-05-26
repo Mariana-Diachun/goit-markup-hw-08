@@ -18,9 +18,10 @@
 }
 
 .modal {
+    overflow-y: scroll;
     position: absolute;
-    width: 450px;
-    min-height: 609px;
+    width: 100vw;
+    height: 100vh;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -31,17 +32,19 @@
     transition: transform 300ms;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     padding: 40px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         width: 450px;
-        min-height: 609px;
+        height: 609px;
+        overflow: none;
     }
     
     @media screen and (min-width: 1200px) {
         width: 528px;
-        min-height: 581px;
+        height: 581px;
+        overflow-y: scroll;
+        overflow: none;
     }
 }
-
 
 
 .close-modal-btn {

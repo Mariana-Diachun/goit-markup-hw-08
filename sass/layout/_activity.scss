@@ -1,7 +1,8 @@
 
 .activity {
-    @media screen and (max-width: 1200px) {
-        display: none;
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: contents;
     }
 }
 
@@ -11,7 +12,6 @@
 
 .activity-list {
     display: flex;
-    margin-top: 50px;
 }
 
 

@@ -138,6 +138,7 @@ button {
 .menu-open-btn {
   margin-left: auto;
   padding: 0;
+  border-bottom: none;
   transition: color var(--hoover-duration) var(--hover-time-function);
 }
 .menu-open-btn:hover, .menu-open-btn:focus {
@@ -154,8 +155,10 @@ button {
   fill: currentColor;
 }
 
-.header__navigation {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .header__navigation {
+    margin-left: 93px;
+  }
 }
 
 .mob-menu {
@@ -288,6 +291,11 @@ button {
 @media screen and (min-width: 768px) {
   .menu-list {
     margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-list {
+    margin-left: 0;
   }
 }
 
@@ -478,9 +486,10 @@ button {
 }
 
 .modal {
+  overflow-y: scroll;
   position: absolute;
-  width: 450px;
-  min-height: 609px;
+  width: 100vw;
+  height: 100vh;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -490,16 +499,19 @@ button {
   transform: translate(-50%, -50%) scale(1) rotate(0);
   padding: 40px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    min-height: 609px;
+    height: 609px;
+    overflow: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
+    overflow-y: scroll;
+    overflow: none;
   }
 }
 
@@ -725,12 +737,18 @@ button {
 .preference__title {
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .preference__title {
+    text-align: start;
+  }
 }
 
 .preference__text {
@@ -740,9 +758,12 @@ button {
   color: var(--second-text-color);
 }
 
-@media screen and (max-width: 1200px) {
+.activity {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
   .activity {
-    display: none;
+    display: contents;
   }
 }
 
@@ -752,7 +773,6 @@ button {
 
 .activity-list {
   display: flex;
-  margin-top: 50px;
 }
 
 .activity__item {
@@ -782,7 +802,7 @@ button {
 .section__title {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -790,6 +810,8 @@ button {
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    font-size: 33px;
+    line-height: 1.17;
   }
 }
 
@@ -921,7 +943,7 @@ button {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
   .portfolio {
@@ -939,12 +961,15 @@ button {
 
 .portfolio-item {
   margin-bottom: 15px;
-  margin-right: 8px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-item {
     margin-bottom: 0;
   }
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .galery-item {
@@ -1080,7 +1105,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
   }
@@ -1093,11 +1118,6 @@ button {
 
 .footer--flex {
   display: block;
-}
-@media screen and (min-width: 768px) {
-  .footer--flex {
-    margin-right: 78px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer--flex {
