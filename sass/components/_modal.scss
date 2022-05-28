@@ -154,11 +154,15 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
-
+    @media screen and (min-width: 1200px) {
+            line-height: 1.71;
+            font-size: 14px;
+        }
+        
     span {
         width: 16px;
         height: 15px;
@@ -170,37 +174,33 @@
         justify-content: center;
         }
 }
-span.contract-text {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: #757575;
-    @media screen and (min-width: 1200px) {
-        line-height: 1.71;
-    }
-}
+
 .contract {
     color: var(--accent-color);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     @media screen and (min-width: 1200px) {
+        font-size: 14px;
         line-height: 1.71;
     }
 }
-
 .check-icon {
     fill: transparent;
 }
 
-.input-checkbox:checked+.check-text span {
+.input-check:checked+.check-text span {
     background-color: var(--accent-color);
     border: none;
 }
 
-.input-checkbox:checked+.check-text .check-icon {
+.input-check:checked+.check-text .check-icon {
     fill: #FFF;
 }
+
+
+
+
 
 .modal-send {
     outline: none;

@@ -621,10 +621,16 @@ button {
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    line-height: 1.71;
+    font-size: 14px;
+  }
 }
 .check-text span {
   width: 16px;
@@ -637,18 +643,6 @@ button {
   justify-content: center;
 }
 
-span.contract-text {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-@media screen and (min-width: 1200px) {
-  span.contract-text {
-    line-height: 1.71;
-  }
-}
-
 .contract {
   color: var(--accent-color);
   font-size: 12px;
@@ -657,6 +651,7 @@ span.contract-text {
 }
 @media screen and (min-width: 1200px) {
   .contract {
+    font-size: 14px;
     line-height: 1.71;
   }
 }
@@ -665,12 +660,12 @@ span.contract-text {
   fill: transparent;
 }
 
-.input-checkbox:checked + .check-text span {
+.input-check:checked + .check-text span {
   background-color: var(--accent-color);
   border: none;
 }
 
-.input-checkbox:checked + .check-text .check-icon {
+.input-check:checked + .check-text .check-icon {
   fill: #FFF;
 }
 
@@ -811,7 +806,7 @@ span.contract-text {
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
-    font-size: 33px;
+    font-size: 36px;
     line-height: 1.17;
   }
 }
